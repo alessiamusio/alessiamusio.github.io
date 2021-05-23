@@ -90,4 +90,12 @@ hr {
         margin: 30px 30px 30px 0;
         display: block;
     }
+    h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 2rem;
+        color: #282828;
+        display: inline-block;
+        position: relative;
+        line-height: 3.7rem;
+    }
 }
