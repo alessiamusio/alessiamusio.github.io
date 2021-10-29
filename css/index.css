@@ -192,6 +192,13 @@ a:hover {
 
   body {
     background-image: url("./assets/bg-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  letter-spacing: 0.2px;
+  color: #000000;
   }
 
   .nav {
