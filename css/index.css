@@ -30,7 +30,7 @@ a{
 
 .nav-link {
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
   font-weight: 500;
   transition-duration: 0.5s;
@@ -46,7 +46,7 @@ a{
 }
 
 .menu-container {
-  margin: 200px 20% 0 15%;
+  margin: 200px 21% 0 15%;
 }
 
 
@@ -78,13 +78,13 @@ a{
 .testo-small {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .testo-small-bold {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .hello {
