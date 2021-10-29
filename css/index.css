@@ -30,7 +30,7 @@ a{
 
 .nav-link {
   font-family: "Work Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   font-weight: 500;
   transition-duration: 0.5s;
@@ -46,7 +46,7 @@ a{
 }
 
 .menu-container {
-  margin: 200px 21% 0 15%;
+  margin: 200px 300px 0 200px;
 }
 
 
@@ -78,13 +78,13 @@ a{
 .testo-small {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .testo-small-bold {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .hello {
@@ -185,6 +185,12 @@ a:hover {
 
 .row-ig{
   padding: 12px 3px;
+}
+
+@media (max-width: 1200px) {
+.menu-container {
+  margin: 200px 46px 0 46px;
+}
 }
 
 /*MOBILE*/
