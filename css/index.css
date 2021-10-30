@@ -11,9 +11,7 @@ body {
   color: #000000;
 }
 
-a{
-  cursor: pointer;
-}
+/*NAV*/
 
 .nav {
   margin: 48px;
@@ -23,14 +21,13 @@ a{
   padding: 100px 48px 48px 48px;
 }
 
-
 .nav-right {
   display: inline-flex;
 }
 
 .nav-link {
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
   font-weight: 500;
   transition-duration: 0.5s;
@@ -45,15 +42,10 @@ a{
   transform: translate(0, -5px);
 }
 
-.menu-container {
-  margin: 200px 300px 0 200px;
-}
-
-
 /*MENU*/
 
-.intro {
-  color: #000000;
+.menu-container {
+  margin: 200px 300px 0 200px;
 }
 
 .menu-hover {
@@ -75,31 +67,19 @@ a{
   position: relative;
 }
 
-.testo-small {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-.testo-small-bold {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
 .hello {
   padding-top: 40px;
 }
 
 .titolo {
-  padding-top: 150px;
+  padding-top: 155px;
 }
 
-.col{
+.col {
   margin-right: 0px;
 }
 
-.row{
+.row {
   padding: 30px 0 0 0;
 }
 
@@ -107,6 +87,21 @@ a{
   padding-left: 12px;
   padding-bottom: 2px;
   height: 12px;
+}
+
+.riga {
+  border-top: 0.1px solid;
+}
+
+/*TESTO*/
+
+.testo-big {
+  font-family: "Gilda Display", serif;
+  font-weight: 300;
+  font-size: 64px;
+  width: 100%;
+  position: relative;
+  line-height: 1.2;
 }
 
 .testo-medium {
@@ -118,13 +113,16 @@ a{
   position: relative;
 }
 
-.testo-big {
-  font-family: "Gilda Display", serif;
+.testo-small {
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  font-size: 64px;
-  width: 100%;
-  position: relative;
-  line-height: 1.2;
+  font-size: 16px;
+}
+
+.testo-small-bold {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .testo-small-l {
@@ -156,16 +154,13 @@ a{
   right: 0;
 }
 
-.riga {
-  border-top: 0.1px solid;
-}
-
 a {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: normal;
   color: #000000;
+  cursor: pointer;
 }
 
 a:hover {
@@ -173,128 +168,60 @@ a:hover {
   color: #000000;
 }
 
-.ig-post{
-  height: 100%;
-  width: 100%;
-  border: 1px solid #000;
+/*SMALL-DESK-01*/
+
+@media (max-width: 1500px) {
+  .testo-big,
+  .testo-medium {
+    font-size: 50px;
+  }
+
+  .nav-link,
+  .testo-small,
+  .testo-small-bold,
+  .testo-small-l,
+  .testo-small-m,
+  .testo-small-r {
+    font-size: 14px;
+  }
+
+  .menu-container {
+    margin: 150px 270px 0 170px;
+  }
+
+  .titolo {
+    padding-top: 120px;
+  }
 }
 
-.col-ig{
-  padding: 0 12px;
-}
-
-.row-ig{
-  padding: 12px 3px;
-}
+/*SMALL-DESK-02*/
 
 @media (max-width: 1200px) {
-.menu-container {
-  margin: 200px 46px 0 46px;
-}
+  .menu-container {
+    margin: 150px 46px 0 46px;
+  }
 }
 
 /*MOBILE*/
 @media (max-width: 800px) {
-
   body {
     background-image: url("./assets/bg-home-mobile.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  letter-spacing: 0.2px;
-  color: #000000;
   }
 
   .nav {
     margin: 26px;
   }
 
-  .menu-container {
-    margin: 70px 24px 35px 24px;
-  }
-
-  .testo-big {
-    font-size: 34px;
-  }
-
-  .testo-medium {
-    font-size: 32px;
-  left: 0px;
-  }
-
-  .testo-small-l {
-    display: none;
-  }
-
-  .testo-small{
-    font-size: 14px;
-  }
-
-  .testo-small-bold{
-    font-size: 14px;
-  }
-
-  .nav-link{
-    font-size: 14px;
-  }
-
-  .testo-small-m{
-    display: none;
-  }
-
   .footer {
     padding: 24px;
   }
 
-  .bottoni{
-    display: none;
-  }
-
-  .freccia {
-    display: none;
+  .menu-container {
+    margin: 70px 24px 35px 24px;
   }
 
   .menu-hover:hover {
     transform: none;
-  }
-
-  .flex{
-    display: inline-flex;
-  }
-
-  .skills-container{
-    display: block;
-  }
-
-  .skills, .contatti{
-    padding-bottom: 15px;
-  }
-
-
-  .contatti-container{
-    display: block;
-  }
-
-  .testo-small {
-    font-size: 15px;
-  }
-  
-  .testo-small-bold {
-    font-size: 15px;
-  }
-
-  .row{
-    padding: 7px 0 25px 0;
-  }
-
-  .col-ig{
-    padding: 0 3px;
-  }
-  
-  .row-ig{
-    padding: 3px 12px;
   }
 
   .menu-voce {
@@ -312,4 +239,49 @@ a:hover {
     padding-bottom: 35px;
   }
 
+  .testo-big,
+  .testo-medium {
+    font-size: 34px;
+  }
+
+  .testo-medium {
+    left: 0px;
+  }
+
+  .testo-small-l,
+  .testo-small-m {
+    display: none;
+  }
+
+  .testo-small,
+  .testo-small-bold,
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .flex {
+    display: inline-flex;
+  }
+
+  .skills-container {
+    display: block;
+  }
+
+  .skills,
+  .contatti {
+    padding-bottom: 15px;
+  }
+
+  .contatti-container {
+    display: block;
+  }
+
+  .row {
+    padding: 7px 0 25px 0;
+  }
+
+  .freccia {
+    height: 35px;
+    padding-bottom: 5px;
+  }
 }
