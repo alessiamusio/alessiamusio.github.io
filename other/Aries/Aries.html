@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <script src='./js/jquery-1.8.3.min.js'></script>
+    <script src='./js/jquery.elevatezoom.js'></script>
+    <link href="./css/zoom.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="month">
+            <img class="zoom_01" src='./Aries_Infograph02_v3_small.jpg' data-zoom-image="./Aries_Infograph02_v3.jpg" />
+        </div>
+    </div>
+
+    <script>
+        $('.zoom_01').elevateZoom({
+            zoomType: "lens",
+            cursor: "crosshair",
+            lensShape: "square",
+            borderSize: 1,
+            lensSize: 350
+        });
+
+    </script>
+
+</body>
+
+</html>
