@@ -1744,7 +1744,7 @@
 			easing: false,
 			easingAmount: 12,
 			lensSize: 200,
-			zoomWindowWidth: 400,
+			zoomWindowWidth: 200,
 			zoomWindowHeight: 400,
 			zoomWindowOffetx: 0,
 			zoomWindowOffety: 0,
