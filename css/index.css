@@ -1,287 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 body {
   background-image: url("./assets/bg-home.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  letter-spacing: 0.2px;
-  color: #000000;
+  color: #14469F;
 }
 
-/*NAV*/
-
-.nav {
-  margin: 48px;
+.text-container {
+  padding: 120px;
 }
 
-.footer {
-  padding: 100px 48px 48px 48px;
-}
 
-.nav-right {
-  display: inline-flex;
-}
+/*LOOP*/
 
-.nav-link {
-  font-family: "Work Sans", sans-serif;
-  font-size: 15px;
-  color: #000000;
-  font-weight: 500;
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  padding: 0;
-  margin-top: -4px;
-}
-
-.nav-link:hover {
-  transform: translate(0, -5px);
-}
-
-/*MENU*/
-
-.menu-container {
-  margin: 200px 300px 0 200px;
-}
-
-.menu-hover {
-  cursor: pointer;
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  color: #000000;
-}
-
-.menu-hover:hover {
-  transform: translate(30px, 0);
-}
-
-.menu-voce {
-  margin: 40px 0 0 0;
+.loop-holder {
+  position: fixed;
   display: flex;
-  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #14469F;
 }
 
-.hello {
-  padding-top: 40px;
+.loop-holder-bottom {
+  bottom: 0;
 }
 
-.titolo {
-  padding-top: 155px;
+.loop-holder__text {
+  animation: textLoop 3s linear infinite;
+  font-size: 14px;
+  padding-right: .35em;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #FFFCE9;
+  font-family: 'Azeret Mono', monospace;
 }
 
-.col {
-  margin-right: 0px;
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+  }
 }
 
-.row {
-  padding: 30px 0 0 0;
-}
 
-.freccia-small {
-  padding-left: 12px;
-  padding-bottom: 2px;
-  height: 12px;
-}
-
-.riga {
-  border-top: 0.1px solid;
-}
 
 /*TESTO*/
 
 .testo-big {
-  font-family: "Gilda Display", serif;
-  font-weight: 300;
-  font-size: 64px;
-  width: 100%;
-  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 100;
+  font-size: 57px;
   line-height: 1.2;
+  color: #14469F;
 }
 
 .testo-medium {
-  font-family: "Gilda Display", serif;
-  font-weight: 300;
-  font-size: 60px;
-  width: 100%;
-  left: 120px;
-  position: relative;
-}
-
-.testo-small {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.testo-small-bold {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.testo-small-l {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  align-content: flex-start;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-}
-
-.testo-small-m {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  position: absolute;
-  bottom: 25px;
-  margin-left: 50px;
-}
-
-.testo-small-r {
-  font-family: "Work Sans";
-  font-weight: 300;
-  font-size: 64px;
-  align-content: flex-end;
-  position: absolute;
-  bottom: 5px;
-  right: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  color: #14469F;
 }
 
 a {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 40px;
   line-height: normal;
-  color: #000000;
   cursor: pointer;
+  color: #14469F;
+  text-decoration: underline;
+  font-weight: 400;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #000000;
+  font-weight: 600;
+  color: #14469F;
 }
+
+
 
 /*SMALL-DESK-01*/
 
-@media (max-width: 1500px) {
-  .testo-big,
-  .testo-medium {
-    font-size: 50px;
+@media (max-width: 1300px) {
+  .text-container {
+    padding: 100px;
   }
 
-  .nav-link,
-  .testo-small,
-  .testo-small-bold,
-  .testo-small-l,
-  .testo-small-m,
-  .testo-small-r {
-    font-size: 14px;
+  .testo-big {
+    font-size: 52px;
   }
-
-  .menu-container {
-    margin: 150px 270px 0 170px;
-  }
-
-  .titolo {
-    padding-top: 120px;
-  }
-}
-
-/*SMALL-DESK-02*/
-
-@media (max-width: 1200px) {
-  .menu-container {
-    margin: 150px 46px 0 46px;
-  }
-}
-
-/*MOBILE*/
-@media (max-width: 800px) {
-  body {
-    background-image: url("./assets/bg-home-mobile.jpg");
-  }
-
-  .nav {
-    margin: 26px;
-  }
-
-  .footer {
-    padding: 24px;
-  }
-
-  .menu-container {
-    margin: 70px 24px 35px 24px;
-  }
-
-  .menu-hover:hover {
-    transform: none;
-  }
-
-  .menu-voce {
-    margin: 30px 0;
-    display: flex;
-    position: relative;
-  }
-
-  .titolo {
-    padding-top: 60px;
-  }
-
-  .hello {
-    padding-top: 20px;
-    padding-bottom: 35px;
-  }
-
-  .testo-big,
+  
   .testo-medium {
     font-size: 34px;
   }
-
-  .testo-medium {
-    left: 0px;
-  }
-
-  .testo-small-l,
-  .testo-small-m {
-    display: none;
-  }
-
-  .testo-small,
-  .testo-small-bold,
-  .nav-link {
-    font-size: 14px;
-  }
-
-  .flex {
-    display: inline-flex;
-  }
-
-  .skills-container {
-    display: block;
-  }
-
-  .skills,
-  .contatti {
-    padding-bottom: 15px;
-  }
-
-  .contatti-container {
-    display: block;
-  }
-
-  .row {
-    padding: 7px 0 25px 0;
-  }
-
-  .freccia {
-    height: 35px;
-    padding-bottom: 5px;
+  
+  a {
+    font-size: 34px;
   }
 }
+
+
+/*SMALL-DESK-02*/
+
+@media (max-width: 1000px) {
+  .text-container {
+    padding: 100px  80px;
+  }
+}
+
+
+/*MOBILE*/
+@media (max-width: 800px){
+    body {
+      background-image: url("./assets/bg-home-mobile.jpg");
+    }
+    .text-container {
+      padding: 70px 50px;
+    }
+  
+    .testo-big {
+      font-size: 42px;
+    }
+    
+    .testo-medium {
+      font-size: 24px;
+    }
+    
+    a {
+      font-size:24px;
+    }
+  }
