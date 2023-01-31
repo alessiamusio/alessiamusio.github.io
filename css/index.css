@@ -126,18 +126,22 @@ a:hover {
       background-image: url("./assets/bg-home-mobile.jpg");
     }
     .text-container {
-      padding: 70px 50px;
+      padding: 60px 40px;
     }
   
     .testo-big {
-      font-size: 42px;
+      font-size: 36px;
     }
     
     .testo-medium {
-      font-size: 24px;
+      font-size: 20px;
     }
     
     a {
-      font-size:24px;
+      font-size:20px;
+    }
+
+    .loop-holder-bottom {
+      display: none;
     }
   }
