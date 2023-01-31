@@ -126,7 +126,7 @@ a:hover {
       background-image: url("./assets/bg-home-mobile.jpg");
     }
     .text-container {
-      padding: 60px 35px;
+      padding: 50px 30px;
     }
   
     .testo-big {
@@ -134,11 +134,13 @@ a:hover {
     }
     
     .testo-medium {
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 400;
     }
     
     a {
-      font-size:20px;
+      font-size:18px;
+      font-weight: 400;
     }
 
     .loop-holder-bottom {
