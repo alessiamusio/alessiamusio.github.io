@@ -14,6 +14,7 @@ body {
 .testo-big {
   font-family: 'Libre Baskerville', serif;
   font-weight: 300;
+  font-style: italic;
   font-size: 64px;
   width: 495px;
   padding-top: 40vh;
