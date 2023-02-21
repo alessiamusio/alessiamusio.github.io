@@ -108,6 +108,7 @@ a:hover {
 
 .libre {
   font-family: 'Libre Baskerville', serif;
+  font-style: italic;
 }
 
 .testo-big {
@@ -384,6 +385,11 @@ a:hover {
   .intro,
   .menu {
     margin: 100px 32px;
+  }
+
+  .intro,
+  .menu {
+    padding-top: 70px;
   }
 
 }
