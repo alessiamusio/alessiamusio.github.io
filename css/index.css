@@ -371,6 +371,10 @@ a:hover {
     font-size: 22px;
   }
 
+  .testo-xsmall {
+    padding-top: 10px;
+  }
+
   .nav {
     margin: 32px;
   }
