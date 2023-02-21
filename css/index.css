@@ -1,21 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;500;500;600;700;800;900&family=Libre+Baskerville:ital@1&display=swap');
 /*GENERAL*/
 
-body, html {
+
+body {
   --text-color: #000;
   --bkg-color: #F5D986;
-  --ex-color: #F5D986;
-  --mix-blend-mode: difference;
+  --ex-color: #000;
 }
 
-body.dark-theme, html.dark-theme {
+body.dark-theme {
   --text-color: #1C46C5;
   --bkg-color: #FAFDF6;
-  --ex-color: #E7B500;
-  --mix-blend-mode: difference;
+  --ex-color: #1C46C5;
 }
 
-body, html {
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #1C46C5;
+    --bkg-color: #FAFDF6;
+    --ex-color: #1C46C5;
+  }
+  body.light-theme {
+    --text-color: #000;
+    --bkg-color: #F5D986;
+    --ex-color: #000;
+  }
+}
+
+
+body {
   background: var(--bkg-color);
   letter-spacing: 0.1px;
   height: 100vh;
@@ -59,7 +74,6 @@ body, html {
 .nav {
   margin: 72px;
   z-index: 200;
-  mix-blend-mode: var(--mix-blend-mode);
 }
 
 .nav-link {
