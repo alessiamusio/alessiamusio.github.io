@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;500;500;600;700;800;900&family=Libre+Baskerville:ital@1&display=swap');
-/*GENERAL*/
 
+/*GENERAL*/
 
 body {
   --text-color: #000;
@@ -68,12 +68,36 @@ body {
 }
 
 
+.noise1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.07;
+  z-index:1000;
+  pointer-events: none;
+}
+
+.noise2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.07;
+  z-index:1000;
+  pointer-events: none;
+}
+
 /*TOOLTIP*/
 
 #TextHidden {
   display: none;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #box:hover #TextHidden {
