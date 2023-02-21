@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;500;500;600;700;800;900&family=Libre+Baskerville:ital@1&display=swap');
 
+
+/*NOISE*/
+
+.noise1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.07;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.noise2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.07;
+  z-index: 1000;
+  pointer-events: none;
+}
+
 /*GENERAL*/
 
 body {
@@ -25,12 +52,16 @@ body.dark-theme {
     --text-color: #1C46C5;
     --bkg-color: #FAFDF6;
     --ex-color: #1C46C5;
+    --bkg-linear: linear-gradient(0deg, rgba(250, 253, 246, 0) 0%, rgba(250, 253, 246, 1) 100%);
+    --bkg-linear-reverse: linear-gradient(0deg, rgba(250, 253, 246, 1) 0%, rgba(250, 253, 246, 0) 100%);
   }
 
   body.light-theme {
     --text-color: #000;
     --bkg-color: #F5D986;
     --ex-color: #000;
+    --bkg-linear: linear-gradient(0deg, rgba(245, 217, 134, 0) 0%, rgba(245, 217, 134, 1) 100%);
+    --bkg-linear-reverse: linear-gradient(0deg, rgba(245, 217, 134, 1) 0%, rgba(245, 217, 134, 0) 100%);
   }
 }
 
@@ -44,11 +75,11 @@ body {
   color: var(--ex-color);
 }
 
-.fixed-top {
+.nav.fixed-top {
   background: var(--bkg-linear);
 }
 
-.fixed-bottom {
+.nav.fixed-bottom {
   background: var(--bkg-linear-reverse);
 }
 
@@ -65,30 +96,6 @@ body {
 .portfolio,
 .services {
   color: var(--text-color);
-}
-
-.noise1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  pointer-events: none;
-  opacity: 0.07;
-  z-index: 1000;
-  pointer-events: none;
-}
-
-.noise2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  pointer-events: none;
-  opacity: 0.07;
-  z-index: 1000;
-  pointer-events: none;
 }
 
 
