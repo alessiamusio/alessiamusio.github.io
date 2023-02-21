@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;500;500;600;700;800;900&family=Libre+Baskerville:ital@1&display=swap');
 /*GENERAL*/
 
 body {
@@ -10,7 +11,7 @@ body {
 body.dark-theme {
   --text-color: #1C46C5;
   --bkg-color: #FAFDF6;
-  --ex-color: #E7B400;
+  --ex-color: #E7B500;
   --mix-blend-mode: difference;
 }
 
@@ -116,6 +117,7 @@ a:hover {
 
 .testo-medium {
   font-size: 48px;
+  font-weight: 500;
 }
 
 .testo-small {
@@ -365,7 +367,23 @@ a:hover {
 
   .testo-big,
   .testo-medium {
-    font-size: 28px;
+    font-size: 22px;
+  }
+
+  .nav {
+    margin: 32px;
+  }
+
+  .bio,
+  .mail {
+    width: auto;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .intro,
+  .menu {
+    margin: 100px 32px;
   }
 
 }
