@@ -140,10 +140,6 @@ body {
 }
 
 a {
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -223,14 +219,10 @@ a:hover {
 
 .portfolio {
   cursor: pointer;
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
 }
 
 .portfolio:hover {
-  transform: translate(30px, 0);
+  opacity: 0.5;
 }
 
 .riga {
