@@ -6,12 +6,16 @@ body {
   --text-color: #000;
   --bkg-color: #F5D986;
   --ex-color: #000;
+  --bkg-linear: linear-gradient(0deg, rgba(245,217,134,0) 0%, rgba(245,217,134,1) 100%);
+  --bkg-linear-reverse: linear-gradient(0deg, rgba(245,217,134,1) 0%, rgba(245,217,134,0) 100%);
 }
 
 body.dark-theme {
   --text-color: #1C46C5;
   --bkg-color: #FAFDF6;
   --ex-color: #1C46C5;
+  --bkg-linear: linear-gradient(0deg, rgba(250,253,246,0) 0%, rgba(250,253,246,1) 100%);
+  --bkg-linear-reverse: linear-gradient(0deg, rgba(250,253,246,1) 0%, rgba(250,253,246,0) 100%);
 }
 
 
@@ -38,6 +42,14 @@ body {
 
 .nav {
   color: var(--ex-color);
+}
+
+.fixed-top{
+  background: var(--bkg-linear);
+}
+
+.fixed-bottom{
+  background: var(--bkg-linear-reverse);
 }
 
 .nav a {
@@ -72,7 +84,7 @@ body {
 /*NAV*/
 
 .nav {
-  margin: 72px;
+  padding: 72px;
   z-index: 200;
 }
 
@@ -250,7 +262,7 @@ a:hover {
   }
 
   .nav {
-    margin: 48px;
+    padding: 48px;
   }
 
   .nav-link-right {
@@ -296,7 +308,7 @@ a:hover {
   }
 
   .nav {
-    margin: 48px;
+    padding: 48px;
   }
 
   .nav-link {
@@ -390,7 +402,7 @@ a:hover {
   }
 
   .nav {
-    margin: 32px;
+    padding: 32px;
   }
 
   .bio,
