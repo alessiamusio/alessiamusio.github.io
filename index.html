@@ -49,6 +49,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/loading.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -93,7 +97,7 @@
     <!-- Navbar -->
     <div class="sito">
 
-        <ul class="nav justify-content-between fixed-top">
+        <ul class="nav justify-content-between fixed-top animate-load-1">
             <li class="nav-item nav-left">
                 <div id="box"><a class="nav-link" href="https://alessiamusio.com"><span class="epilogue">Alessia
                             Mus</span><span class="libre">ììì</span><span class="epilogue">o</span></a>
@@ -118,7 +122,7 @@
         </ul>
 
 
-        <div class="sito-content">
+        <div class="sito-content sito animate-load">
             <div class="intro testo-big">
                 <span class="epilogue">I love ✹ handcrafts, photography ✽ and</span><span class="libre">
                     pasta.</span><span class="epilogue"> You can find me ✺ </span><span class="libre">playing with data
@@ -161,7 +165,7 @@
                         href="mailto:hello@alessiamusio.com">alessiamusio.am@gmail.com</a></div>
             </div>
         </div>
-        <ul class="nav justify-content-between fixed-bottom">
+        <ul class="nav justify-content-between fixed-bottom animate-load-1">
             <li class="nav-item nav-left">
                 <div class="nav-link epilogue">2023. All rights reserved.</div>
             </li>
@@ -187,7 +191,9 @@
         crossorigin="anonymous"></script>
 
 
-
+        <script>
+            $('.content-sito').fadeIn(1000);
+        </script>
 </body>
 
 </html>

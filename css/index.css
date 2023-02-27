@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;500;500;600;700;800;900&family=Libre+Baskerville:ital@1&display=swap');
 
+.content-sito {
+  display: none;
+}
+
+.animate-load{
+  animation: reveal 1s ease-out;
+    animation-delay: 1s;
+}
+
+.animate-load-1{
+  animation: reveal-1 1.5s ease-out;
+    animation-delay: 1s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes reveal-1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 
 /*NOISE*/
 
